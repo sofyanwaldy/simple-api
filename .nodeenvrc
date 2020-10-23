@@ -1,0 +1,10 @@
+[nodeenv]
+debug = False
+jobs = 2
+make = make
+node = 12.18.4
+npm = 6.14.6
+prebuilt = False
+profile = False
+with_npm = False
+without_ssl = False
