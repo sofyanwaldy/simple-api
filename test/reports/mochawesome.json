@@ -1,0 +1,180 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-10-23T09:45:35.584Z",
+    "end": "2020-10-23T09:45:35.688Z",
+    "duration": 104,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2c5d2071-fdd2-4ab4-8c2e-993cd7ef7192",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e42b3291-9b0a-4195-a32a-71fc3031bbe6",
+          "title": "List of brands",
+          "fullFile": "/Users/macbook/Projects/antikode-apis/test/brand.js",
+          "file": "/test/brand.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "@GET List Brand response data should be array",
+              "fullTitle": "List of brands @GET List Brand response data should be array",
+              "timedOut": false,
+              "duration": 73,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await api.get(endpoint)\nconst { status, message, data } = response.body;\nassert(status).to.equal(200);\nassert(message).to.equal(\"Ok\");\nassert(data).to.be.an('array');",
+              "err": {},
+              "uuid": "8ce90ad8-7c5a-4373-ae67-fd4f45ae896b",
+              "parentUUID": "e42b3291-9b0a-4195-a32a-71fc3031bbe6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8ce90ad8-7c5a-4373-ae67-fd4f45ae896b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 73,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        },
+        {
+          "uuid": "88ffe1b8-426c-4c68-994d-c3a2aaf71624",
+          "title": "Retrieve brand by ID",
+          "fullFile": "/Users/macbook/Projects/antikode-apis/test/brand.js",
+          "file": "/test/brand.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "@GET find brand by ID response data should have attribute [name, logo, banner]",
+              "fullTitle": "Retrieve brand by ID @GET find brand by ID response data should have attribute [name, logo, banner]",
+              "timedOut": false,
+              "duration": 12,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await api.get(endpoint + '/1')\nconst { status, message, data } = response.body;\nassert(status).to.equal(200);\nassert(message).to.equal(\"Ok\");\nassert(data).to.have.property('name');\nassert(data).to.have.property('logo');\nassert(data).to.have.property('banner');",
+              "err": {},
+              "uuid": "5b205934-cbc0-4e70-bdf4-c667bb382f82",
+              "parentUUID": "88ffe1b8-426c-4c68-994d-c3a2aaf71624",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5b205934-cbc0-4e70-bdf4-c667bb382f82"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        },
+        {
+          "uuid": "c864a313-c02e-4065-bb29-a3431d086d5b",
+          "title": "Index of API",
+          "fullFile": "/Users/macbook/Projects/antikode-apis/test/index.js",
+          "file": "/test/index.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "@GET index api",
+              "fullTitle": "Index of API @GET index api",
+              "timedOut": false,
+              "duration": 5,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await api.get(endpoint);\nassert(response.status).to.equal(200);",
+              "err": {},
+              "uuid": "74fbd6a7-9a85-443d-b17c-8d3224f23266",
+              "parentUUID": "c864a313-c02e-4065-bb29-a3431d086d5b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "74fbd6a7-9a85-443d-b17c-8d3224f23266"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 180000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "test/reports/"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
