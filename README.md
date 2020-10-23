@@ -2,7 +2,8 @@
 
 ## SETUP
 
-NODE Version v12.18.4
+NODE Version v12.18.4  
+
 NPM version 6.14.6
 
 recommended using nodeenv
